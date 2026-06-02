@@ -19,7 +19,10 @@ totalAmountInput.addEventListener('input', function() {
 });
 
 const themeToggleBtn = document.getElementById('themeToggle');
-let isDarkMode = false;
+let isDarkMode = true;
+
+document.documentElement.setAttribute('data-theme', 'dark');
+themeToggleBtn.textContent = '☀️';
 
 themeToggleBtn.addEventListener('click', () => {
     isDarkMode = !isDarkMode;
